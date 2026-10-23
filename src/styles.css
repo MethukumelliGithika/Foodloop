@@ -1,0 +1,432 @@
+/* FoodLoop - Save Food, Share Hope */
+/* Forest-green, Cream, and White Design System */
+
+:root {
+  --font-heading: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  /* Forest Green Palette */
+  --fl-forest-dark: #1b4332;
+  --fl-forest: #2d6a4f;
+  --fl-forest-mid: #40916c;
+  --fl-forest-light: #52b788;
+  --fl-forest-soft: #74c69d;
+  --fl-mint-pale: #d8f3dc;
+  --fl-mint-bg: #e8f5e9;
+
+  /* Cream & Neutral Palette */
+  --fl-cream: #fbf9f5;
+  --fl-cream-subtle: #f4efe6;
+  --fl-cream-dark: #ebe3d5;
+  --fl-white: #ffffff;
+
+  /* Warm Accents */
+  --fl-terracotta: #e76f51;
+  --fl-amber: #f4a261;
+  --fl-amber-light: #fff8e1;
+
+  /* Text Colors */
+  --fl-text-main: #1f2937;
+  --fl-text-secondary: #4b5563;
+  --fl-text-muted: #6b7280;
+  --fl-text-light: #9ca3af;
+
+  /* Card and Border Tokens */
+  --fl-border: #e5e7eb;
+  --fl-border-subtle: #f3f4f6;
+  --fl-shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 2px rgba(0, 0, 0, 0.03);
+  --fl-shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.06), 0 2px 4px -1px rgba(0, 0, 0, 0.04);
+  --fl-shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -2px rgba(0, 0, 0, 0.03);
+  --fl-radius-sm: 8px;
+  --fl-radius-md: 12px;
+  --fl-radius-lg: 16px;
+  --fl-radius-xl: 20px;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--fl-text-main);
+  background-color: var(--fl-cream);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6, .brand-title {
+  font-family: var(--font-heading);
+  letter-spacing: -0.02em;
+}
+
+/* Color Utility Classes */
+.bg-forest {
+  background-color: var(--fl-forest) !important;
+}
+
+.bg-forest-dark {
+  background-color: var(--fl-forest-dark) !important;
+}
+
+.bg-forest-light {
+  background-color: var(--fl-mint-pale) !important;
+}
+
+.bg-cream {
+  background-color: var(--fl-cream) !important;
+}
+
+.bg-cream-subtle {
+  background-color: var(--fl-cream-subtle) !important;
+}
+
+.bg-emerald {
+  background-color: var(--fl-forest-mid) !important;
+}
+
+.bg-emerald-light {
+  background-color: #ecfdf5 !important;
+}
+
+.bg-amber-light {
+  background-color: #fffbeb !important;
+}
+
+.bg-blue-light {
+  background-color: #eff6ff !important;
+}
+
+.bg-terracotta-light {
+  background-color: #fff1f0 !important;
+}
+
+.bg-terracotta {
+  background-color: var(--fl-terracotta) !important;
+}
+
+.text-forest {
+  color: var(--fl-forest) !important;
+}
+
+.text-forest-dark {
+  color: var(--fl-forest-dark) !important;
+}
+
+.text-forest-mid {
+  color: var(--fl-forest-mid) !important;
+}
+
+.text-cream {
+  color: var(--fl-cream) !important;
+}
+
+.text-emerald {
+  color: var(--fl-forest-mid) !important;
+}
+
+.text-amber {
+  color: #b45309 !important;
+}
+
+.text-terracotta {
+  color: var(--fl-terracotta) !important;
+}
+
+.border-forest-subtle {
+  border-color: #a7f3d0 !important;
+}
+
+.border-emerald-subtle {
+  border-color: #6ee7b7 !important;
+}
+
+.border-amber-subtle {
+  border-color: #fde68a !important;
+}
+
+.border-terracotta-subtle {
+  border-color: #fecdd3 !important;
+}
+
+.bg-white-10 {
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+.border-white-10 {
+  border-color: rgba(255, 255, 255, 0.12) !important;
+}
+
+.border-white-15 {
+  border-color: rgba(255, 255, 255, 0.15) !important;
+}
+
+.text-white-70 {
+  color: rgba(255, 255, 255, 0.78) !important;
+}
+
+/* Buttons */
+.btn-forest {
+  background-color: var(--fl-forest);
+  border-color: var(--fl-forest);
+  color: #ffffff;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-forest:hover, .btn-forest:focus {
+  background-color: var(--fl-forest-dark);
+  border-color: var(--fl-forest-dark);
+  color: #ffffff;
+  transform: translateY(-1px);
+}
+
+.btn-outline-forest {
+  color: var(--fl-forest);
+  border-color: var(--fl-forest);
+  background-color: transparent;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-outline-forest:hover, .btn-outline-forest:focus {
+  background-color: var(--fl-forest);
+  border-color: var(--fl-forest);
+  color: #ffffff;
+}
+
+.btn-terracotta {
+  background-color: var(--fl-terracotta);
+  border-color: var(--fl-terracotta);
+  color: #ffffff;
+  transition: all 0.2s ease;
+}
+
+.btn-terracotta:hover {
+  background-color: #d0583b;
+  border-color: #d0583b;
+  color: #ffffff;
+}
+
+/* Brand & Navbar */
+.brand-logo-icon {
+  width: 38px;
+  height: 38px;
+  flex-shrink: 0;
+}
+
+.active-nav-link {
+  background-color: var(--fl-mint-pale);
+  color: var(--fl-forest) !important;
+}
+
+.hover-forest:hover {
+  color: var(--fl-forest) !important;
+}
+
+.hover-white:hover {
+  color: #ffffff !important;
+  text-decoration: underline !important;
+}
+
+/* Cards & Layout */
+.food-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  background-color: #ffffff;
+  border: 1px solid var(--fl-border) !important;
+}
+
+.food-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--fl-shadow-lg) !important;
+}
+
+.food-card-image-wrapper {
+  height: 200px;
+  background-color: #f3f4f6;
+  overflow: hidden;
+}
+
+.food-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.food-card:hover .food-card-img {
+  transform: scale(1.04);
+}
+
+.stat-card {
+  background-color: #ffffff;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--fl-shadow-md);
+}
+
+/* Typography clamp */
+.text-line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.text-line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Pill Tabs & Filter Buttons */
+.filter-pill {
+  transition: all 0.2s ease;
+  cursor: pointer;
+  border: 1px solid var(--fl-border);
+  background-color: #ffffff;
+  color: var(--fl-text-secondary);
+  font-weight: 500;
+}
+
+.filter-pill:hover {
+  border-color: var(--fl-forest);
+  color: var(--fl-forest);
+}
+
+.filter-pill.active {
+  background-color: var(--fl-forest);
+  border-color: var(--fl-forest);
+  color: #ffffff !important;
+}
+
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(145deg, #f4efe6 0%, #ffffff 50%, #e8f5e9 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-badge {
+  background-color: var(--fl-mint-pale);
+  color: var(--fl-forest);
+  border: 1px solid #bbf7d0;
+}
+
+/* How It Works Step Cards */
+.step-number-badge {
+  width: 44px;
+  height: 44px;
+  background-color: var(--fl-mint-pale);
+  color: var(--fl-forest);
+  font-weight: 700;
+  font-size: 1.2rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.25rem;
+}
+
+/* Custom Alert Slide In */
+@keyframes slideInDown {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-slide-in {
+  animation: slideInDown 0.25s ease-out forwards;
+}
+
+/* Form Styles */
+.form-label {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--fl-text-main);
+  margin-bottom: 0.4rem;
+}
+
+.form-control, .form-select {
+  border-radius: 10px;
+  border: 1px solid #d1d5db;
+  padding: 0.65rem 0.95rem;
+  font-size: 0.95rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-control:focus, .form-select:focus {
+  border-color: var(--fl-forest);
+  box-shadow: 0 0 0 0.2rem rgba(45, 106, 79, 0.18);
+}
+
+/* Progress bar */
+.progress {
+  height: 10px;
+  border-radius: 10px;
+  background-color: #e5e7eb;
+}
+
+.progress-bar-forest {
+  background-color: var(--fl-forest);
+}
+
+.progress-bar-emerald {
+  background-color: var(--fl-forest-mid);
+}
+
+/* Empty State */
+.empty-state-box {
+  background-color: #ffffff;
+  border: 2px dashed #d1d5db;
+  border-radius: var(--fl-radius-xl);
+  padding: 3rem 1.5rem;
+}
+
+/* Preset Image Picker */
+.preset-thumb {
+  cursor: pointer;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.2s ease;
+}
+
+.preset-thumb:hover {
+  transform: scale(1.05);
+}
+
+.preset-thumb.selected {
+  border-color: var(--fl-forest);
+  box-shadow: 0 0 0 3px rgba(45, 106, 79, 0.25);
+}
+
+/* Footer Section */
+.footer-section {
+  margin-top: auto;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .food-card-image-wrapper {
+    height: 180px;
+  }
+  .display-4 {
+    font-size: 2.2rem;
+  }
+}
